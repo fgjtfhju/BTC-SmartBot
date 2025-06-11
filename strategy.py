@@ -21,7 +21,7 @@ def run_bot():
         try:
             order = client.order_market_buy(
                 symbol=selected_pair,
-                quoteOrderQty=balance * 0.8
+                quoteOrderQty=balance * 0.8, 6))
             )
             print("Kjøpte:", order)
             print("20 % beholdes som BTC-havn.")
