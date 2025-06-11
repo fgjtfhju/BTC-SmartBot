@@ -21,7 +21,7 @@ def run_bot():
         try:
             order = client.order_market_buy(
                 symbol=selected_pair,
-quoteOrderQty = str(rousnd(balance * 0.8, 6))
+quoteOrderQty = str(round(balance * 0.8, 6))
                 
             )
             print("Kjøpte:", order)
